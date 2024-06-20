@@ -1,0 +1,59 @@
+
+*{
+      font-family: "Nunito", sans-serif;;
+}
+.nav-link{
+    font-size: 18px;
+}
+.nav-link:hover{
+    color: #ffdb0d;
+}
+.active {
+     color: #ffdb0d !important;
+     font-weight: 700;
+}
+.carousel-item{
+    height: 600px;
+}
+section{
+    margin: 70px auto;
+}
+
+.lte-heading{
+    display: inline;
+    background: linear-gradient(to top, yellow 50%, white 50%); /* Background color for the text */
+    color: black; /* Text color */
+    padding: 0 2px;  
+}
+.icon-circle{
+    background-color: #ffdb0d;
+    padding: 18px 10px;
+    color: white;
+    border-radius: 50%;
+}
+
+.service-heading{
+    color: #ffdb0d;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.service-img{
+    height: 500px;
+}
+.imags-1{
+    background-image: url(Images/side-view-man-checking-electrical-panel.jpg);
+    background-size: cover;
+}
+
+.imags-2{
+    background-image: url(Images/bright-light-bulb-hanging-room.jpg);
+    background-size: cover;
+}
+.imags-3{
+    background-image: url(Images/worker-is-cutting-wires-with-lineman-s-pliers.jpg);
+    background-size: cover;
+}
+.imags-4{
+    background-image: url(Images/portrait-person-doing-arts-crafts.jpg);
+    background-size: cover;
+}
