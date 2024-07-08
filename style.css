@@ -43,6 +43,7 @@ section{
 .imags-1{
     background-image: url(Images/side-view-man-checking-electrical-panel.jpg);
     background-size: cover;
+    
 }
 
 .imags-2{
@@ -57,3 +58,88 @@ section{
     background-image: url(Images/portrait-person-doing-arts-crafts.jpg);
     background-size: cover;
 }
+
+@media screen and (max-width:500px) {
+    .hero{
+        height: 300px !important;
+    }
+    #carouselExampleCaptions{
+        height: 300px !important;
+    }
+}
+.project-card{
+    background-color: #ffdb0d;
+}
+.main-color{
+    color: #ffdb0d !important;
+}
+.footer-links
+{
+    color: white !important;
+
+}
+a{
+    text-decoration: none;
+}
+
+.img-scale {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.img-container:hover .img-scale {
+    transform: scale(1.2);
+}
+.img-container{
+    overflow: hidden;
+}
+
+.card {
+    overflow: hidden;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.custom-client-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .custom-slide-track {
+    display: flex;
+    animation: custom-scroll 20s linear infinite;
+    white-space: nowrap; /* Prevent slides from wrapping */
+  }
+  
+  .custom-slide {
+    width: 250px;
+    height: 100px;
+    display: inline-block; /* Display slides inline */
+    margin: 0 10px; /* Adjust margin between slides */
+  }
+  
+  .custom-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  @keyframes custom-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 5)); /* Adjust based on the number of slides */
+    }
+  }
+  

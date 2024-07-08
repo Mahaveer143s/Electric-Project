@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="froala"></div>
+    <button id="getContentButton">Submit</button>
+</body>
+<script type="text/javascript" src="/froala-editor/js/froala_editor.pkgd.min.js"></script>
+
+
+<script> 
+    document.addEventListener('DOMContentLoaded', function() {
+        var editor = new FroalaEditor('#froala', {
+                // Froala options
+            }, function() {
+                // Callback when Froala Editor is initialized
+
+                // Set initial content
+                var initialContent = '<p>This is the initial content of the editor</p>';
+                editor.html.set(initialContent);
+                //response.courseFullDescription
+
+                // Add event listener to the button to get content
+                document.getElementById('getContentButton').addEventListener('click', function() {
+                    var content = editor.html.get();
+                    console.log(content); // Log the editor's content
+                    alert(content); // Display the content in an alert
+                });
+            });
+        });</script>
+</html>
